@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+    <ion-icon name="mic"  right style="float:right;margin-right:62px;" (click)="startListen()"></ion-icon>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  The world is your oyster.
+  <p>
+    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+  </p>
+  <ion-textarea rows="5"  readonly="true" [(ngModel)]="speechText" name="speechText" ></ion-textarea>
+  <button (click)="startListen()">开启语音</button>
+  <button (click)="stopListen()">停止语音</button>
+  <button (click)="startSpeak()">开启说话</button>
+  <button (click)="stopSpeak()">停止说话</button>
+  <button (click)="pauseSpeaking()">中止说话</button>
+  <button (click)="resumeSpeaking()">恢复说话</button>
+</ion-content>
