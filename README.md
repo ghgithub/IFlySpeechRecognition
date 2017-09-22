@@ -1,0 +1,2 @@
+# IFlySpeechRecognition
+Ionic2 TypeScript版的科大讯飞语音识别
